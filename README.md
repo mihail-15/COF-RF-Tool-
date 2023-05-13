@@ -8,7 +8,7 @@ The software requires python 3.7 or higher to run. The software also depends on 
 
 To install the software, users can download or clone the source code from GitHub:
 
-git clone https://github.com/COF-RF-Tool/COF-RF-Tool.git
+git clone https://github.com/mihail-15/COF-RF-Tool-.git
 
 Usage
 
