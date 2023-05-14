@@ -7,8 +7,8 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import matplotlib.pyplot as plt
 from matplotlib import patheffects
 
-# load the data from the 'xlsx' file
-data = pd.read_excel("C:/Users/kolev/OneDrive/1_БАН/000_AI/Tribology/pin-on-disk/data_AlSi10Mg-SiC.xlsx")
+# load the data from the 'xlsx' file and include your path
+data = pd.read_excel("C:/Users//pin-on-disk/data_AlSi10Mg-SiC.xlsx")
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 
@@ -93,6 +93,26 @@ plt.ylim(0, 0.6)
 plt.grid(True)
 
 plt.show()
+
+fig = plt.figure() 
+plt.plot(X,y)
+plt.xlim(0, 450)
+plt.ylim(0, 0.6)
+plt.grid(True)
+
+# Plot of the actual vs predicted coefficient of friction as a function of sliding distance
+plt.scatter(X_test[:, 0], y_test,color='cyan',label='Actual test', linewidth=1, alpha=0.9, zorder=1, marker=None, path_effects=pe1)
+plt.scatter(X_test[:, 0], y_pred,color='orange',label='Predicted test', linewidth=1, alpha=0.9, zorder=1, marker=None, path_effects=pe1)
+plt.scatter(X_val[:, 0], y_val,color='green',label='Actual val', linewidth=1, alpha=0.9, zorder=1, marker=None, path_effects=pe1)
+plt.scatter(X_val[:, 0], y_val_pred,color='magenta',label='Predicted val', linewidth=1, alpha=0.9, zorder=1, marker=None, path_effects=pe1)
+plt.xlabel('Sliding distance, m', fontsize='15', fontweight='bold')
+plt.ylabel('Coefficient of friction, -', fontsize='15', fontweight='bold')
+plt.legend()
+
+
+# Save the plot with dpi=500 in 'png'
+fig.savefig('cof_plot.png', dpi=500)
+
 
 # write the performance metrics for both sets in a file
 with open('performance_metrics.txt','w') as f:
