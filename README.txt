@@ -35,3 +35,7 @@ If you have any questions or issues with the software, please open an issue on G
 License
 
 The software is licensed under the MIT License. See LICENSE for more details.
+
+Citation
+
+Kolev, M. COF-RF-Tool: A Python Software for Predicting the Coefficient of Friction of Open-Cell AlSi10Mg-SiC Composites Using Random Forest Model. Softw. Impacts 2023, 100520, doi:10.1016/j.simpa.2023.100520.
