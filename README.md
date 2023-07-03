@@ -36,6 +36,10 @@ License
 
 The software is licensed under the MIT License. See LICENSE for more details.
 
+Funding
+
+This research was funded by Bulgarian National Science Fund, Project № КП-06-Н57/20 “Fabrication of new type of self-lubricating antifriction metal matrix composite materials with improved mechanical and tribological properties”.
+
 Citation
 
 Kolev, M. COF-RF-Tool: A Python Software for Predicting the Coefficient of Friction of Open-Cell AlSi10Mg-SiC Composites Using Random Forest Model. Softw. Impacts 2023, 100520, doi:10.1016/j.simpa.2023.100520.
